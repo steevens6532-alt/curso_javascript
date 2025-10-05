@@ -4,4 +4,12 @@ const producto = {
     disponible: true
 }
 
-console.log(producto.precio);
+console.log(producto);
+
+producto.imagen = "iamgen.jpg";
+
+console.log(producto);
+
+//Eliminar propiedades
+delete producto.disponible;
+console.log(producto);
