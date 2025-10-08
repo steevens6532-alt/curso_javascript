@@ -39,3 +39,22 @@ pertenece = carritoCompras.some(function(producto){
 });
 
 console.log(pertenece);
+
+//.reduce() Permite hacer una sumatoria de los valores dentro de una lista 
+
+let resultado = carritoCompras.reduce(function(total, producto){
+    return total + producto.precio
+}, 0);
+
+console.log(resultado);
+
+
+//.filter()
+
+let filtralo = carritoCompras.filter(function(palabra){
+    return palabra.nombre === 'Mouse';
+});
+
+console.log(filtralo);
+
+
